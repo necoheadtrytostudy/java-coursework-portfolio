@@ -5,7 +5,7 @@ A collection of selected Java coursework projects demonstrating my progress in G
 ## Projects
 
 ### 1. Student Grade Management System
-
+![Student Grade Management System](../student-grade-system-screenshot.png)
 A Java Swing application for entering and displaying student records.
 
 Features:
