@@ -28,30 +28,26 @@ A Java console application demonstrating secure database access and common SQL o
 - MySQL Server
 - MySQL Connector/J
 
-Create the database before running:
-
 ```sql
 CREATE DATABASE student;
+```
 
-Set the database credentials in PowerShell:
-powershell
-
-
-
+```powershell
 $env:DB_USER="root"
 $env:DB_PASSWORD="your-password"
 $env:DB_URL="jdbc:mysql://localhost:3306/student?serverTimezone=UTC"
+```
 
-Compile and run with MySQL Connector/J on the classpath:
-powershell
-
-
-
+```powershell
 javac -cp ".;mysql-connector-j.jar" src\GradeDatabaseDemo.java
 java -cp ".;src;mysql-connector-j.jar" GradeDatabaseDemo
+```
 
-Expected output:
+```text
 2026001 | Amy             | 92.00
 2026002 | Ben             | 88.00
+```
 
-SecurityDatabase passwords are not stored in the source code. Credentials are supplied through environment variables.
+## Security
+
+Database passwords are not stored in the source code. Credentials are supplied through environment variables.
